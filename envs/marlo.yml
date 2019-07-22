@@ -1,0 +1,11 @@
+name: marloweek
+channels:
+- crowdai
+- conda-forge
+dependencies:
+- python=3.6
+- pip=19.1.1
+- openjdk
+- pip:
+  - gym
+  - marlo
