@@ -1,4 +1,4 @@
-name: marloweek
+name: marlo2
 channels:
 - crowdai
 - conda-forge
@@ -6,6 +6,7 @@ dependencies:
 - python=3.6
 - pip=19.1.1
 - openjdk
+- malmo
 - pip:
   - gym
   - marlo
