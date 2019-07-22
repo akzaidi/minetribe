@@ -12,6 +12,19 @@ cd envs
 conda env update -f marlo.yml
 ```
 
+To start using the environment you'll need to start a client:
+
+```bash
+$MALMO_MINECRAFT_ROOT/launchClient.sh -port 10000
+```
+
+### Docker Version
+
+```bash
+docker run -it --rm -p 10000:10000 syuntoku/marlo_client
+```
+
+Now you can run 
 
 ### MineRL
 
