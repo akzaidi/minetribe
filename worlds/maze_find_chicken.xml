@@ -15,7 +15,7 @@
             <AllowSpawning>false</AllowSpawning>
         </ServerInitialConditions>
         <ServerHandlers>
-            <FlatWorldGenerator generatorString="3;7,220*1,5*3,2;3;,biome_1" />
+            <FlatWorldGenerator generatorString="3;minecraft:bedrock,2*minecraft:dirt,minecraft:grass;1;village" />
             <DrawingDecorator>
                 <DrawBlock type="lava" x="8" y="226" z="10"/>
                 <DrawBlock type="water" x="-5" y="226" z="19"/>
@@ -122,7 +122,7 @@
     <AgentSection>
         <Name>Agent1</Name>
         <AgentStart>
-            <Placement x="-203.5" y="81.0" z="217.5"/> <!-- will be overwritten by MazeDecorator -->
+            <Placement x="5.5" y="4" yaw="90" z="5.5"/> <!-- will be overwritten by MazeDecorator -->
         </AgentStart>
         <AgentHandlers>
             <VideoProducer want_depth="false">
