@@ -138,7 +138,7 @@
                 <Reward description="out_of_time" reward="-1000" />
             </RewardForMissionEnd>
             <RewardForTouchingBlockType>
-                <Block reward="-100.0" type="lava" behavior="onceOnly"/>
+                <Block reward="-100.0" type="lava"/>
             </RewardForTouchingBlockType>
             <AgentQuitFromTouchingBlockType>
                 <Block type="lava" />
@@ -146,7 +146,7 @@
 
             <RewardForSendingCommand reward="-1" />
             <RewardForCatchingMob>
-                <Reward description="caught_the_Chicken" reward="1000" />                
+                <Mob type="Chicken" description="caught_the_Chicken" reward="1000" />                
             </RewardForCatchingMob>
             <AgentQuitFromCatchingMob>
                <Mob description="caught_the_Chicken" global="true" type="Chicken" />
