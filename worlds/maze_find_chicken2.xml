@@ -18,26 +18,26 @@
             <FlatWorldGenerator generatorString="3;minecraft:bedrock,2*minecraft:dirt,minecraft:grass;1;village" />
             <DrawingDecorator>
                 <DrawBlock type="lava" x="8" y="226" z="10"/>
-                <DrawBlock type="water" x="-5" y="226" z="19"/>
+                <DrawBlock type="fire" x="-5" y="226" z="19"/>
                 <DrawBlock type="redstone_block" x="-7" y="226" z="12"/>
                 <DrawBlock type="obsidian" x="-14" y="226" z="8"/>
                 <DrawBlock type="lava" x="-15" y="226" z="15"/>
-                <DrawBlock type="water" x="-4" y="226" z="-6"/>
-                <DrawBlock type="water" x="10" y="226" z="14"/>
+                <DrawBlock type="fire" x="-4" y="226" z="-6"/>
+                <DrawBlock type="fire" x="10" y="226" z="14"/>
                 <DrawBlock type="lava" x="10" y="226" z="-11"/>
                 <DrawBlock type="redstone_block" x="-2" y="226" z="4"/>
                 <DrawBlock type="obsidian" x="-3" y="226" z="-7"/>
                 <DrawBlock type="lava" x="-17" y="226" z="-13"/>
                 <DrawBlock type="obsidian" x="1" y="226" z="2"/>
-                <DrawBlock type="water" x="16" y="226" z="-2"/>
-                <DrawBlock type="water" x="7" y="226" z="-1"/>
-                <DrawBlock type="water" x="-12" y="226" z="7"/>
+                <DrawBlock type="fire" x="16" y="226" z="-2"/>
+                <DrawBlock type="fire" x="7" y="226" z="-1"/>
+                <DrawBlock type="fire" x="-12" y="226" z="7"/>
                 <DrawBlock type="redstone_block" x="-4" y="226" z="-10"/>
                 <DrawBlock type="redstone_block" x="-6" y="226" z="3"/>
                 <DrawBlock type="obsidian" x="2" y="226" z="-1"/>
                 <DrawBlock type="redstone_block" x="-13" y="226" z="-10"/>
-                <DrawBlock type="water" x="13" y="226" z="11"/>
-                <DrawBlock type="water" x="4" y="226" z="-11"/>
+                <DrawBlock type="fire" x="13" y="226" z="11"/>
+                <DrawBlock type="fire" x="4" y="226" z="-11"/>
                 <DrawBlock type="obsidian" x="2" y="226" z="10"/>
                 <DrawBlock type="lava" x="-19" y="226" z="1"/>
                 <DrawBlock type="redstone_block" x="-1" y="226" z="-18"/>
@@ -52,20 +52,20 @@
                 <DrawBlock type="lava" x="16" y="226" z="-12"/>
                 <DrawBlock type="lava" x="0" y="226" z="7"/>
                 <DrawBlock type="lava" x="12" y="226" z="11"/>
-                <DrawBlock type="water" x="0" y="226" z="18"/>
+                <DrawBlock type="fire" x="0" y="226" z="18"/>
                 <DrawBlock type="redstone_block" x="15" y="226" z="-20"/>
-                <DrawBlock type="water" x="7" y="226" z="5"/>
-                <DrawBlock type="water" x="-3" y="226" z="-1"/>
-                <DrawBlock type="water" x="10" y="226" z="1"/>
-                <DrawBlock type="water" x="17" y="226" z="-17"/>
-                <DrawBlock type="water" x="-9" y="226" z="0"/>
+                <DrawBlock type="fire" x="7" y="226" z="5"/>
+                <DrawBlock type="fire" x="-3" y="226" z="-1"/>
+                <DrawBlock type="fire" x="10" y="226" z="1"/>
+                <DrawBlock type="fire" x="17" y="226" z="-17"/>
+                <DrawBlock type="fire" x="-9" y="226" z="0"/>
                 <DrawBlock type="obsidian" x="-12" y="226" z="-1"/>
                 <DrawBlock type="obsidian" x="-20" y="226" z="17"/>
-                <DrawBlock type="water" x="10" y="226" z="3"/>
+                <DrawBlock type="fire" x="10" y="226" z="3"/>
                 <DrawBlock type="obsidian" x="-7" y="226" z="-13"/>
                 <DrawBlock type="lava" x="18" y="226" z="16"/>
                 <DrawBlock type="obsidian" x="9" y="226" z="-20"/>
-                <DrawBlock type="water" x="-7" y="226" z="11"/>
+                <DrawBlock type="fire" x="-7" y="226" z="11"/>
                 <DrawBlock type="lava" x="20" y="226" z="-18"/>
                 <DrawBlock type="obsidian" x="-1" y="226" z="14"/>
                 <DrawBlock type="lava" x="-10" y="226" z="-9"/>
@@ -73,44 +73,44 @@
                 <DrawBlock type="redstone_block" x="15" y="226" z="-19"/>
                 <DrawBlock type="obsidian" x="17" y="226" z="-3"/>
                 <DrawBlock type="obsidian" x="-4" y="226" z="4"/>
-                <DrawBlock type="water" x="5" y="226" z="1"/>
+                <DrawBlock type="fire" x="5" y="226" z="1"/>
                 <DrawBlock type="obsidian" x="1" y="226" z="7"/>
                 <DrawBlock type="lava" x="20" y="226" z="4"/>
-                <DrawBlock type="water" x="-20" y="226" z="-19"/>
+                <DrawBlock type="fire" x="-20" y="226" z="-19"/>
                 <DrawBlock type="lava" x="1" y="226" z="10"/>
                 <DrawBlock type="obsidian" x="11" y="226" z="19"/>
                 <DrawBlock type="lava" x="0" y="226" z="-8"/>
                 <DrawBlock type="redstone_block" x="-11" y="226" z="-15"/>
                 <DrawBlock type="redstone_block" x="-9" y="226" z="-15"/>
                 <DrawBlock type="lava" x="-18" y="226" z="-3"/>
-                <DrawBlock type="water" x="-6" y="226" z="-18"/>
+                <DrawBlock type="fire" x="-6" y="226" z="-18"/>
                 <DrawBlock type="lava" x="-15" y="226" z="-1"/>
                 <DrawBlock type="lava" x="5" y="226" z="-4"/>
                 <DrawBlock type="redstone_block" x="16" y="226" z="-20"/>
-                <DrawBlock type="water" x="15" y="226" z="-7"/>
+                <DrawBlock type="fire" x="15" y="226" z="-7"/>
                 <DrawBlock type="obsidian" x="-5" y="226" z="20"/>
-                <DrawBlock type="water" x="-8" y="226" z="-19"/>
-                <DrawBlock type="water" x="-2" y="226" z="-8"/>
-                <DrawBlock type="water" x="7" y="226" z="-7"/>
-                <DrawBlock type="water" x="-17" y="226" z="-12"/>
+                <DrawBlock type="fire" x="-8" y="226" z="-19"/>
+                <DrawBlock type="fire" x="-2" y="226" z="-8"/>
+                <DrawBlock type="fire" x="7" y="226" z="-7"/>
+                <DrawBlock type="fire" x="-17" y="226" z="-12"/>
                 <DrawBlock type="lava" x="5" y="226" z="-20"/>
                 <DrawBlock type="redstone_block" x="-15" y="226" z="-15"/>
-                <DrawBlock type="water" x="-12" y="226" z="7"/>
+                <DrawBlock type="fire" x="-12" y="226" z="7"/>
                 <DrawBlock type="lava" x="16" y="226" z="-5"/>
                 <DrawBlock type="redstone_block" x="17" y="226" z="-14"/>
-                <DrawBlock type="water" x="3" y="226" z="-4"/>
-                <DrawBlock type="water" x="-6" y="226" z="-12"/>
+                <DrawBlock type="fire" x="3" y="226" z="-4"/>
+                <DrawBlock type="fire" x="-6" y="226" z="-12"/>
                 <DrawBlock type="lava" x="7" y="226" z="-1"/>
                 <DrawBlock type="redstone_block" x="15" y="226" z="5"/>
-                <DrawBlock type="water" x="-19" y="226" z="12"/>
+                <DrawBlock type="fire" x="-19" y="226" z="12"/>
                 <DrawBlock type="lava" x="-7" y="226" z="-8"/>
                 <DrawBlock type="obsidian" x="-14" y="226" z="-2"/>
-                <DrawBlock type="water" x="-18" y="226" z="16"/>
-                <DrawBlock type="water" x="18" y="226" z="-13"/>
+                <DrawBlock type="fire" x="-18" y="226" z="16"/>
+                <DrawBlock type="fire" x="18" y="226" z="-13"/>
                 <DrawBlock type="obsidian" x="-15" y="226" z="-15"/>
                 <DrawBlock type="lava" x="6" y="226" z="-10"/>
                 <DrawBlock type="lava" x="5" y="226" z="18"/>
-                <DrawBlock type="water" x="-13" y="226" z="-18"/>
+                <DrawBlock type="fire" x="-13" y="226" z="-18"/>
                 <!-- Mobs -->
                 <DrawEntity type="Chicken" x="2.5" y="4" z="8.5" />
             </DrawingDecorator>
@@ -126,8 +126,8 @@
         </AgentStart>
         <AgentHandlers>
             <VideoProducer want_depth="false">
-                <Width>81</Width>
-                <Height>81</Height>
+                <Width>6401</Width>
+                <Height>480</Height>
             </VideoProducer>
             <ContinuousMovementCommands>
                 <ModifierList type="deny-list">
