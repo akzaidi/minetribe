@@ -3,6 +3,7 @@ import numpy as np
 from gym import ObservationWrapper
 import gym
 
+
 class MalmoRGBObservationWrapper(ObservationWrapper):
     """
     Generate RGB frame observation resizing to the specified width/height and depth
@@ -11,6 +12,8 @@ class MalmoRGBObservationWrapper(ObservationWrapper):
     def __init__(self, env, height, width, grayscale, normalize=True, add_health=False):
         assert height > 0, 'height should be > 0'
         assert width > 0, 'width should be > 0'
+
+        super().__init__(env)
 
         self._height = height
         self._width = width
