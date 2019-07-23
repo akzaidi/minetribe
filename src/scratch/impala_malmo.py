@@ -3,20 +3,21 @@ from copy import deepcopy
 
 import ray
 import malmoenv
+from athens_malmo_obs_wrapper import MalmoRGBObservationWrapper
 from ray.tune import register_env, tune
 from pathlib import Path
 
 MALMO_XSD_PATH = os.environ['MALMO_XSD_PATH']
 MALMO_ROOT_PATH = os.environ['MALMO_MINECRAFT_ROOT']
-MALMO_MISSION_PATH = MALMO_ROOT_PATH+os.sep+"MalmoEnv"+os.sep
+MALMO_MISSION_PATH = "/home/minerl/repositories/minetribe/worlds/"
 
 MALMO_DEFAULTS = {
-    'mission': 'missions/mobchase_single_agent.xml',
-    'port': 9000,
+    'mission': 'maze_find_chicken.xml',
+    'port': 10000,
     'server': '127.0.0.1',
     'port2': None,
     'server2': None,
-    'episodes': 1,
+    'episodes': 10,
     'episode': 0,
     'role': 0,
     'episodemaxsteps': 0,
@@ -41,7 +42,7 @@ def create_malmo(env_config: dict):
              role=config["role"],
              exp_uid=config["experimentUniqueId"],
              episode=config["episode"], resync=config["resync"])
-
+    env = MalmoRGBObservationWrapper(env, 82, 82, True)
     return env
 
 
