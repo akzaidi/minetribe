@@ -7,7 +7,7 @@ from ray.tune import register_env, tune
 from pathlib import Path
 
 MALMO_XSD_PATH = os.environ['MALMO_XSD_PATH']
-MALMO_ROOT_PATH = os.environ['MINECRAFT_MALMO_ROOT']
+MALMO_ROOT_PATH = os.environ['MALMO_MINECRAFT_ROOT']
 MALMO_MISSION_PATH = MALMO_ROOT_PATH+os.sep+"MalmoEnv"+os.sep
 
 MALMO_DEFAULTS = {
@@ -59,3 +59,4 @@ tune.run("IMPALA",
          )
 
 ray.shutdown()
+
