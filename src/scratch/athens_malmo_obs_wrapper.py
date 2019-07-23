@@ -13,6 +13,8 @@ class MalmoRGBObservationWrapper(ObservationWrapper):
         assert height > 0, 'height should be > 0'
         assert width > 0, 'width should be > 0'
 
+        env.reward_range = (-3, 1000)
+
         super().__init__(env)
 
         self._height = height
