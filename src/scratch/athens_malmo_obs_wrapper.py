@@ -36,6 +36,8 @@ class MalmoRGBObservationWrapper(ObservationWrapper):
                 self._space = gym.spaces.Box(0, 255,
                                              (self._height, self._width, 3), np.uint8)
 
+        self.observation_space = self._space
+
     def observation(self, img):
         if img is not None:
             img = resize(img, self._space.shape[:2])
@@ -55,7 +57,3 @@ class MalmoRGBObservationWrapper(ObservationWrapper):
 
         logging.info("none")
         return np.zeros(self._space.shape, self._space.dtype)
-
-    @property
-    def observation_space(self):
-        return self._space
