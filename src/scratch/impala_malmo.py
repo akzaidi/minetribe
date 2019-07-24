@@ -34,13 +34,14 @@ def create_malmo(env_config: dict):
         config['server2'] = config['server']
 
     xml = Path(MALMO_MISSION_PATH+config["mission"]).read_text()
-    env = DownsampledMalmoEnv(82, 82, True)
+    env = DownsampledMalmoEnv(84, 84, True)
     env.init(xml, config["port"],
              server=config["server"],
              server2=config["server2"], port2=config["port2"],
              role=config["role"],
              exp_uid=config["experimentUniqueId"],
              episode=config["episode"], resync=config["resync"])
+    env.observation_space = env._space
     return env
 
 
