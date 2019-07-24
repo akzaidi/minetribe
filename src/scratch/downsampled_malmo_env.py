@@ -12,13 +12,11 @@ class DownsampledMalmoEnv(Env):
     Generate RGB frame observation resizing to the specified width/height and depth
     """
 
-    def __init__(self, env, height, width, grayscale, *args, normalize=True, add_health=False, **kwargs):
+    def __init__(self, height, width, grayscale, *args, normalize=True, add_health=False, **kwargs):
         super().__init__(*args, **kwargs)
 
         assert height > 0, 'height should be > 0'
         assert width > 0, 'width should be > 0'
-
-        env.reward_range = (-3, 1000)
 
         self._height = height
         self._width = width

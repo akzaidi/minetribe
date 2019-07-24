@@ -34,7 +34,7 @@ def create_malmo(env_config: dict):
         config['server2'] = config['server']
 
     xml = Path(MALMO_MISSION_PATH+config["mission"]).read_text()
-    env = DownsampledMalmoEnv(env, 82, 82, True)
+    env = DownsampledMalmoEnv(82, 82, True)
     env.init(xml, config["port"],
              server=config["server"],
              server2=config["server2"], port2=config["port2"],
