@@ -2,8 +2,7 @@ import os
 from copy import deepcopy
 
 import ray
-import malmoenv
-from athens_malmo_obs_wrapper import MalmoRGBObservationWrapper
+from scratch.downsampled_malmo_env import DownsampledMalmoEnv
 from ray.tune import register_env, tune
 from pathlib import Path
 
@@ -35,14 +34,13 @@ def create_malmo(env_config: dict):
         config['server2'] = config['server']
 
     xml = Path(MALMO_MISSION_PATH+config["mission"]).read_text()
-    env = malmoenv.make()
+    env = DownsampledMalmoEnv(env, 82, 82, True)
     env.init(xml, config["port"],
              server=config["server"],
              server2=config["server2"], port2=config["port2"],
              role=config["role"],
              exp_uid=config["experimentUniqueId"],
              episode=config["episode"], resync=config["resync"])
-    env = MalmoRGBObservationWrapper(env, 82, 82, True)
     return env
 
 
