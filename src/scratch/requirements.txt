@@ -21,6 +21,7 @@ future==0.17.1
 gast==0.2.2
 grpcio==1.16.0
 gym==0.13.1
+git+https://github.com/maxnoe/python-gitpath
 h5py==2.9.0
 idna==2.6
 importlib-metadata==0.18

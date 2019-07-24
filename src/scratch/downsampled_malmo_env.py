@@ -41,16 +41,22 @@ class DownsampledMalmoEnv(Env):
 
         self.observation_space = self._space
 
+    def reset(self):
+        """
+        Reset the environment.
+        """
+        raw_obs = super().reset()
+        return self.convert_observation(raw_obs)
+
     def step(self, action):
         obs, rew, done, info = super().step(action)
         obs = self.convert_observation(obs)
-        return obs, rew, done, info
+        return obs, rew, done, {}
 
     def convert_observation(self, img):
-        if img is not None:
+        if len(img) != 0:
             img = resize(img, self._space.shape[:2])
             if self._gray:
-                img = rgb2gray(img)
                 # rgb2gray may collapse the last dimension - recover it
                 if len(img.shape) < 3:
                     img = img.reshape(img.shape + (1,))
