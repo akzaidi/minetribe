@@ -2,7 +2,7 @@ import logging
 
 import numpy as np
 
-from .image import resize, rgb2gray
+from scratch.image import resize, rgb2gray
 import gym
 from malmoenv.core import Env
 
