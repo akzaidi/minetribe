@@ -46,23 +46,27 @@ def create_malmo(env_config: dict):
     return env
 
 
-
-register_env("malmo", create_malmo)
-env = create_malmo(env_config={"env": "malmo",
-                 "num_workers": 1,
-                 "num_gpus": 0}
+def main():
+    register_env("malmo", create_malmo)
+    env = create_malmo(env_config={"env": "malmo",
+                       "num_workers": 1,
+                       "num_gpus": 0}
          )
 
 
-ray.init(num_cpus=20)
+    ray.init(num_cpus=20)
 
-tune.run("IMPALA",
-         stop={
-             "timesteps_total": 10000,
-         },
-         config={"env": "malmo",
-                 "num_workers": 1,
-                 "num_gpus": 0}
-         )
+    tune.run("IMPALA",
+             stop={
+                "timesteps_total": 10000,
+             },
+             config={"env": "malmo",
+                     "num_workers": 1,
+                     "num_gpus": 0}
+             )
 
-ray.shutdown()
+    ray.shutdown()
+
+
+main()
+

@@ -126,8 +126,8 @@
         </AgentStart>
         <AgentHandlers>
             <VideoProducer want_depth="false">
-                <Width>81</Width>
-                <Height>81</Height>
+                <Width>800</Width>
+                <Height>600</Height>
             </VideoProducer>
             <ContinuousMovementCommands>
                 <ModifierList type="deny-list">

@@ -127,7 +127,7 @@
         </AgentStart>
         <AgentHandlers>
             <VideoProducer want_depth="false">
-                <Width>6401</Width>
+                <Width>640</Width>
                 <Height>480</Height>
             </VideoProducer>
             <ContinuousMovementCommands>
