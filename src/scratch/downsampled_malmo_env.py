@@ -41,15 +41,30 @@ class DownsampledMalmoEnv(Env):
 
         self.observation_space = self._space
 
+        # Reset metrics parameters.
+        self._episode_counter = 0
+        self._episode_rewards = 0
+        self._step_counter = 0
+
     def reset(self):
         """
         Reset the environment.
         """
+        self._episode_rewards = 0
+        self._step_counter = 0
+
         raw_obs = super().reset()
         return self.convert_observation(raw_obs)
 
     def step(self, action):
         obs, rew, done, info = super().step(action)
+        self._step_counter += 1
+        self._episode_rewards += rew
+        if done:
+            self._episode_counter += 1
+            print("Episode %s takes %s steps and gets reward %s" %
+                  (self._episode_counter, self._step_counter,
+                   self._episode_rewards))
         obs = self.convert_observation(obs)
         return obs, rew, done, {}
 
