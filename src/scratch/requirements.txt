@@ -10,7 +10,7 @@ Click==7.0
 cloudpickle==1.2.1
 colorama==0.4.1
 crowdai-api==0.1.21
-cryptography==2.3
+cryptography==3.2
 cycler==0.10.0
 Cython==0.29.6
 daal4py==2019.4
