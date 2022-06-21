@@ -44,7 +44,7 @@ mock==3.0.5
 more-itertools==7.2.0
 numba==0.42.1
 numexpr==2.6.8
-numpy==1.16.2
+numpy==1.22.0
 opencv-python==4.1.0.25
 packaging==19.0
 pandas==0.24.1+0.g1700680.dirty
